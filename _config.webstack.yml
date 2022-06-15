@@ -1,16 +1,16 @@
-favicon: /favicon.ico
-banner: /images/webstack_banner_cn.png
+favicon: /navigation/favicon.ico
+banner: /navigation/images/webstack_banner_cn.png
 
 logo:
-  expanded: /images/logo@2x.png
-  collapsed: /images/logo-collapsed@2x.png
-  dark: /images/logo_dark@2x.png
+  expanded: /navigation/images/logo@2x.png
+  collapsed: /navigation/images/logo-collapsed@2x.png
+  dark: /navigation/images/logo_dark@2x.png
 
 flag:
   - name: Chinese
     default: true
     icon: flag-cn
-    index: /index.html
+    index: /navigation/index.html
 
 search: true
 
@@ -46,25 +46,29 @@ menu:
 
 testPage:
   - name: Child Page
-    url: /child
-    img: /images/logos/myblog.png
+    url: /navigation/child
+    img: /navigation/images/logos/myblog.png
     description: 子页面测试
 
 devTools:
   - name: Github
     url: https://github.com/
-    img: /images/logos/github.png
+    img: images/logos/github.png
     description: 面向开源及私有软件项目的托管平台。
   - name: Github
     url: https://github.com/
-    img: /images/logos/github.png
+    img: images/logos/github.png
     description: 面向开源及私有软件项目的托管平台。
 
 myBlog:
   - name: HCLonely Blog
     url: https://blog.hclonely.com/
-    img: /images/logos/myBlog.png
+    img: images/logos/myBlog.png
     description: 一个懒人的博客。
+  - name: 钟子明
+    url: https://zzming.cn/
+    img: https://img.upyun.zzming.cn/icon/avatar.png
+    description: 清风抚帘逃，月儿掩面笑。
 
 #about:
 #  url: /about/
@@ -77,13 +81,13 @@ aboutPage:
     html: '<blockquote><p>本站是hexo主题<a href="https://github.com/HCLonely/hexo-theme-webstack">hexo-theme-webstack</a>的demo站。</p></blockquote>'
   webmaster:
     head: 关于站长
-    name: HCLonely
-    url: https://blog.hclonely.com/
-    img: /images/logos/myblog.png
-    description: 懒人一个
+    name: 钟子明
+    url: https://zzming.cn/
+    img: https://img.upyun.zzming.cn/icon/avatar.png
+    description: 清风抚帘逃，月儿掩面笑。
     html: '<br /><blockquote><p>本站是<a href="https://github.com/HCLonely">HCLonely</a>基于<a href="https://github.com/WebStackPage/WebStackPage.github.io">WebStackPage</a>项目做的一款<a href="https://hexo.io/">Hexo</a>主题。</p></blockquote>'
 
-since: 2020
+since: 2022
 
 busuanzi:
   enable: true
@@ -100,28 +104,28 @@ custom:
     <!-- 可设置多行 -->
 
 js:
-  header: /js/header.js
-  footer: /js/footer.js
-  jquery: /js/jquery-1.11.1.min.js
-  bootstrap: /js/bootstrap.min.js
-  TweenMax: /js/TweenMax.min.js
-  resizeable: /js/resizeable.min.js
-  joinable: /js/joinable.js
-  xenonApi: /js/xenon-api.min.js
-  xenonToggles: /js/xenon-toggles.min.js
-  xenonCustom: /js/xenon-custom.min.js
-  lozad: /js/lozad.min.js
-  html5shiv: /js/html5shiv.min.js
-  respond: /js/respond.min.js
+  header: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/header.js
+  footer: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/footer.js
+  jquery: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/jquery-1.11.1.min.js
+  bootstrap: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/bootstrap.min.js
+  TweenMax: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/TweenMax.min.js
+  resizeable: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/resizeable.min.js
+  joinable: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/joinable.js
+  xenonApi: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/xenon-api.min.js
+  xenonToggles: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/xenon-toggles.min.js
+  xenonCustom: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/xenon-custom.min.js
+  lozad: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/lozad.min.js
+  html5shiv: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/html5shiv.min.js
+  respond: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/respond.min.js
   busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 css:
-  hclonely: /css/hclonely.css
+  hclonely: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/hclonely.css
   fonts: //fonts.loli.net/css?family=Arimo:400,700,400italic
-  linecons: /css/fonts/linecons/css/linecons.min.css
-  fontawesome: /css/fonts/fontawesome/css/all.min.css
-  bootstrap: /css/bootstrap.min.css
-  xenonCore: /css/xenon-core.min.css
-  xenonComponents: /css/xenon-components.min.css
-  xenonSkins: /css/xenon-skins.min.css
-  nav: /css/nav.min.css
+  linecons: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/fonts/linecons/css/linecons.min.css
+  fontawesome: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/fonts/fontawesome/css/all.min.css
+  bootstrap: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/bootstrap.min.css
+  xenonCore: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/xenon-core.min.css
+  xenonComponents: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/xenon-components.min.css
+  xenonSkins: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/xenon-skins.min.css
+  nav: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/nav.min.css
