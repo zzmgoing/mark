@@ -1,16 +1,16 @@
-favicon: /navigation/favicon.ico
-banner: /navigation/images/webstack_banner_cn.png
+favicon: images/navigation.ico
+banner:
 
 logo:
-  expanded: /navigation/images/logo@2x.png
-  collapsed: /navigation/images/logo-collapsed@2x.png
-  dark: /navigation/images/logo_dark@2x.png
+  expanded: images/navigation_logo_white.png
+  collapsed: images/navigation_white.png
+  dark: images/navigation_logo_black.png
 
-flag:
-  - name: Chinese
-    default: true
-    icon: flag-cn
-    index: /navigation/index.html
+#flag:
+#  - name: Chinese
+#    default: true
+#    icon: flag-cn
+#    index: /index.html
 
 search: true
 
@@ -28,27 +28,63 @@ githubCorner: '<a href="https://github.com/HCLonely/hexo-theme-webstack" class="
 
 expandAll: false
 menu:
-  - name: 测试页面
-    icon: far fa-star
-    config: testPage
-  - name: 常用工具
-    icon: far fa-star
-    config: hotTools
+  - name: Android文档
+    icon: fab fa-android
+    config: android
+  - name: Flutter文档
+    icon: fas fa-flag
+    config: flutter
+  - name: 开发工具
+    icon: far fa-grin
+    config: devTools
+  - name: 资源平台
+    icon: fas fa-star-of-life
+    config: resourcesPlatform
+  - name: 托管平台
+    icon: fab fa-git
+    config: codePlatform
+  - name: 开放平台
+    icon: fas fa-door-open
+    config: openTools
   - name: 其他工具
     icon: fas fa-tools
     submenu:
-      - name: 开发工具
-        icon: fas fa-tools
-        config: devTools
-      - name: 我的博客
-        icon: fas fa-blog
-        config: myBlog
+      - name: 邮箱
+        icon: fas fa-mail-bulk
+        config: mails
+      - name: 云服务
+        icon: fas fa-cloud
+        config: mails
+  - name: 博客推荐
+    icon: fas fa-book
+    config: goodBlog
 
-testPage:
-  - name: Child Page
-    url: /navigation/child
-    img: /navigation/images/logos/myblog.png
-    description: 子页面测试
+# 子页面
+#testPage:
+#  - name: Child Page
+#    url: /navigation/child
+#    img: /navigation/images/logos/myblog.png
+#    description: 子页面测试
+
+android:
+  - name: Developer-Android
+    url: https://developer.android.google.cn/
+    img: https://developer.android.google.cn/images/logos/android.svg
+    description: Google官方Android文档
+  - name: Github
+    url: https://github.com/
+    img: images/logos/github.png
+    description: 面向开源及私有软件项目的托管平台
+
+flutter:
+  - name: Flutter中文网
+    url: https://flutter.cn/
+    img: https://files.flutter-io.cn/flutter-cn/landing/ec64036b4eacc9f3fd73.svg
+    description: Google官方Flutter文档
+  - name: Flutter实战
+    url: https://book.flutterchina.club/
+    img: https://book.flutterchina.club/assets/img/logo.png
+    description: Flutter技术文档
 
 devTools:
   - name: Github
@@ -60,14 +96,44 @@ devTools:
     img: images/logos/github.png
     description: 面向开源及私有软件项目的托管平台。
 
-myBlog:
+resourcesPlatform:
+  - name: 阿里图标库
+    url: https://www.iconfont.cn/
+    img: https://img.alicdn.com/imgextra/i3/O1CN01Mn65HV1FfSEzR6DKv_!!6000000000514-55-tps-228-59.svg
+    description: 阿里妈妈矢量图标管理平台
+  - name: Font Awesome
+    url: https://fa5.dashgame.com/
+    img: https://gitee.com/static/images/logo-black.svg
+    description: 老牌字体图标库
+
+codePlatform:
+  - name: Github
+    url: https://github.com/
+    img: images/logos/github.png
+    description: 面向开源及私有软件项目的托管平台
+  - name: Gitee
+    url: https://gitee.com/
+    img: https://gitee.com/static/images/logo-black.svg
+    description: 国内最大软件项目的托管平台
+
+openTools:
+  - name: Github
+    url: https://github.com/
+    img: images/logos/github.png
+    description: 面向开源及私有软件项目的托管平台
+  - name: Gitee
+    url: https://gitee.com/
+    img: https://gitee.com/static/images/logo-black.svg
+    description: 国内最大软件项目的托管平台
+
+goodBlog:
   - name: HCLonely Blog
-    url: https://blog.hclonely.com/
+    url: https://www.hclonely.com/
     img: images/logos/myBlog.png
     description: 一个懒人的博客。
   - name: 钟子明
     url: https://zzming.cn/
-    img: https://img.upyun.zzming.cn/icon/avatar.png
+    img: images/avatar.png
     description: 清风抚帘逃，月儿掩面笑。
 
 #about:
@@ -83,7 +149,7 @@ aboutPage:
     head: 关于站长
     name: 钟子明
     url: https://zzming.cn/
-    img: https://img.upyun.zzming.cn/icon/avatar.png
+    img: images/avatar.png
     description: 清风抚帘逃，月儿掩面笑。
     html: '<br /><blockquote><p>本站是<a href="https://github.com/HCLonely">HCLonely</a>基于<a href="https://github.com/WebStackPage/WebStackPage.github.io">WebStackPage</a>项目做的一款<a href="https://hexo.io/">Hexo</a>主题。</p></blockquote>'
 
@@ -96,36 +162,35 @@ busuanzi:
   uv: 本站总访客数$uv
 
 custom:
-  head: |- # 以下内容插入到<head></head>标签内，可设置多行，注意每行开头至少四个空格
-    <!-- 直接添加html内容即可 -->
-    <!-- 可设置多行 -->
+  head:
+    <link rel="stylesheet" href="/css/main.css">
   body: |- # 以下内容插入到</body>标签之前，可设置多行，注意每行开头至少四个空格
     <!-- 直接添加html内容即可 -->
     <!-- 可设置多行 -->
 
 js:
-  header: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/header.js
-  footer: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/footer.js
-  jquery: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/jquery-1.11.1.min.js
-  bootstrap: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/bootstrap.min.js
-  TweenMax: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/TweenMax.min.js
-  resizeable: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/resizeable.min.js
-  joinable: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/joinable.js
-  xenonApi: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/xenon-api.min.js
-  xenonToggles: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/xenon-toggles.min.js
-  xenonCustom: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/xenon-custom.min.js
-  lozad: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/lozad.min.js
-  html5shiv: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/html5shiv.min.js
-  respond: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/js/navigation/respond.min.js
+  header: js/header.js
+  footer: js/footer.js
+  jquery: js/jquery-1.11.1.min.js
+  bootstrap: js/bootstrap.min.js
+  TweenMax: js/TweenMax.min.js
+  resizeable: js/resizeable.min.js
+  joinable: js/joinable.js
+  xenonApi: js/xenon-api.min.js
+  xenonToggles: js/xenon-toggles.min.js
+  xenonCustom: js/xenon-custom.min.js
+  lozad: js/lozad.min.js
+  html5shiv: js/html5shiv.min.js
+  respond: js/respond.min.js
   busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 css:
-  hclonely: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/hclonely.css
+  hclonely: css/hclonely.css
   fonts: //fonts.loli.net/css?family=Arimo:400,700,400italic
-  linecons: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/fonts/linecons/css/linecons.min.css
-  fontawesome: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/fonts/fontawesome/css/all.min.css
-  bootstrap: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/bootstrap.min.css
-  xenonCore: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/xenon-core.min.css
-  xenonComponents: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/xenon-components.min.css
-  xenonSkins: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/xenon-skins.min.css
-  nav: https://fastly.jsdelivr.net/gh/zzmgoing/assets@main/css/navigation/nav.min.css
+  linecons: css/fonts/linecons/css/linecons.min.css
+  fontawesome: css/fonts/fontawesome/css/all.min.css
+  bootstrap: css/bootstrap.min.css
+  xenonCore: css/xenon-core.min.css
+  xenonComponents: css/xenon-components.min.css
+  xenonSkins: css/xenon-skins.min.css
+  nav: css/nav.min.css
